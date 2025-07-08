@@ -1,0 +1,282 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 60px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+}
+p {
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.ingred, .instruct, .nutri {
+    color: hsl(14, 45%, 36%)
+;
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.instruct, .nutri {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    padding-top: 20px;
+
+}
+.container {
+    background-color: white;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 2.5%; 
+}
+
+.heading1 {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 20px;
+    line-height: 1px;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+    padding-bottom: 0.5rem;
+}
+.caption {
+    font-size: 12px;
+    color:hsl(30, 10%, 34%) ;
+}
+
+.preparation {
+    background-color: hsl(322, 100%, 98%);
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+.prep{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.preparation ul li {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.preparation li {
+    text-indent: 1rem;
+} 
+.custom-list-marker li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.ingrediants li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.ingrediants li {
+    text-indent: 1rem;
+}
+.ingrediants ul li {
+    font-size: 1rem;
+}
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.instructions li {
+    font-size: 0.75rem;
+}
+
+.instructions ol {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    }
+    .instructions ol li {
+    text-indent: 0;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    }
+
+
+/*nutrition-section*/
+.nutri-desc {
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+
+}
+/* Nutrition Table - Desktop View */
+.nutri-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nutri-table-inner {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 0.7rem 0;
+    font-weight: 400;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.value {
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    text-align: left;
+    flex: 1;
+    padding-left: 1.5rem;   /* Add space to the left */
+}
+
+.nutri-value {
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+    font-size: 1rem;
+    text-align: left;
+    flex: 1;
+    /* padding-right: 1.5rem; */
+    /* Add space to the right */
+}
+
+.value {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    .container {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    .recipe img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    }
+    .recipe-instruction {
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    }
+
+    .heading1 {
+    font-size: 2rem;
+    font-family: 'Young Serif', serif;
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.2;
+    }
+    .caption {
+        font-size: 1.1rem;
+    }
+    .preparation { 
+    padding: 1rem;
+    }
+    .prep {
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+    .custom-list-marker li 
+    {
+        font-size: 1rem;
+        text-indent: 0.5;
+        line-height: 1.7;
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+    }
+    .ingrediants ul {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    }
+    .ingrediants ul li {
+    text-indent: 0;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 0.5rem;
+    }
+
+    .instructions ol {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    }
+    .instructions ol li {
+    text-indent: 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    }
+    .instructions li::marker {
+        font-size: 1.1rem;
+    }
+    .nutri-table {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    }
+    .row {
+    padding: 0.8rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    }
+    .value {
+    min-width: 90px;
+    padding-left: 2rem;
+    font-size: 0.95rem;
+    }
+    .nutri-value {
+    font-size: 0.95rem;
+    padding-left: 2rem;
+    }
+
+}
