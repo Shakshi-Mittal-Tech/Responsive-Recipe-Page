@@ -51,7 +51,7 @@ li {
 
 .heading1 {
     font-family: 'Young Serif', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1px;
     font-weight: 400;
     color: hsl(24, 5%, 18%);
@@ -84,13 +84,13 @@ li {
 .custom-list-marker li::marker {
     color: hsl(332, 51%, 32%);
 }
-.ingrediants li::marker {
+.ingredients li::marker {
     color: hsl(14, 45%, 36%);
 }
-.ingrediants li {
+.ingredients li {
     text-indent: 1rem;
 }
-.ingrediants ul li {
+.ingredients ul li {
     font-size: 1rem;
 }
 .instructions li::marker {
@@ -231,11 +231,11 @@ li {
         margin-bottom: 0.5rem;
         word-wrap: break-word;
     }
-    .ingrediants ul {
+    .ingredients ul {
     list-style-position: outside;
     padding-left: 1.5rem;
     }
-    .ingrediants ul li {
+    .ingredients ul li {
     text-indent: 0;
     padding-left: 0.5rem;
     font-size: 1rem;
